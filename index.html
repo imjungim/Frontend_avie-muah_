@@ -15,61 +15,134 @@
       src="https://kit.fontawesome.com/05b77e48fa.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/include.js" defer></script>
+    <script src="./js/sidebar.js" defer></script>
     <title>Avie muah</title>
   </head>
   <body>
-    <header data-include="./header.html" class="header-image"></header>
-    <footer data-include="./footer.html" class="footer"></footer>
-
-    <!-- Menu Sidebar -->
-    <!-- is-active -->
-    <aside class="sidebar is-active">
-      <header class="sidebar-header">
-        <div class="sidebar-menu">
-          <h4>CATEGORY</h4>
-          <ul class="drawer-menu-list">
-            <li class="drawer-menu-item">
-              <a href="./springCollection.html">2023 SPRING COLLECTION</a>
-            </li>
-            <li class="drawer-menu-item"><a href="./top.html">TOPS</a></li>
-            <li class="drawer-menu-item">
-              <a href="./pants.html">PANTS</a>
-            </li>
-          </ul>
-
-          <ul class="drawer-menu-list">
-            <li class="drawer-menu-item">
-              <a href="./pages/springCollection.html">COLLECTION</a>
-            </li>
-            <li class="drawer-menu-item">
-              <a href="./about.html">ABOUT</a>
-            </li>
-            <li class="drawer-menu-item">
-              <a href="./boardinfo.html">INFO</a>
-            </li>
-            <li class="drawer-menu-item"><a href="#">NOTICE</a></li>
-          </ul>
-
-          <ul class="drawer-menu-list">
-            <li class="drawer-menu-item">
-              <a href="#"><i class="fa fa-instagram"></i></a>
-            </li>
-            <li class="drawer-menu-item">
-              <a href="#">KO / EN</a>
-            </li>
-          </ul>
-
-          <div class="drawer-nav">
-            <p>LOGIN</p>
-            <p>SEARCH</p>
+    <header class="header-image">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="header-section">
+              <!-- button is-active -->
+              <button class="menu-button">
+                menu <i class="fas fa-caret-down"></i>
+              </button>
+              <div class="logo-image">
+                <a href="./index.html">
+                  <img src="./aviemuah/logo.svg" alt="로고이미지" />
+                </a>
+              </div>
+              <a href="#" class="lg-only">CART(0)</a>
+              <ul class="nav-menu-list md-only">
+                <li class="nav-menu-item">
+                  <a href="#">KO / EN </a>
+                </li>
+                <li class="nav-menu-item">
+                  <a href="#">LOGIN</a>
+                </li>
+                <li class="nav-menu-item">
+                  <a href="#">CART(0)</a>
+                </li>
+                <li class="nav-menu-item">
+                  <a href="#">SEARCH</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+      </div>
 
-      </header>
-    </aside>
+      <!-- Menu Sidebar -->
+      <!-- is-active -->
+      <aside class="sidebar">
+        <header class="sidebar-header">
+          <div class="sidebar-menu">
+            <h4>CATEGORY</h4>
+            <ul class="drawer-menu-list">
+              <li class="drawer-menu-item">
+                <a href="./springCollection.html">2022 SPRING COLLECTION</a>
+              </li>
+              <li class="drawer-menu-item"><a href="./top.html">TOPS</a></li>
+              <li class="drawer-menu-item">
+                <a href="./pants.html">PANTS</a>
+              </li>
+            </ul>
 
-    <div class="overlay"></div>
+            <ul class="drawer-menu-list">
+              <li class="drawer-menu-item">
+                <a href="./pages/springCollection.html">COLLECTION</a>
+              </li>
+              <li class="drawer-menu-item">
+                <a href="./about.html">ABOUT</a>
+              </li>
+              <li class="drawer-menu-item">
+                <a href="./boardinfo.html">INFO</a>
+              </li>
+              <li class="drawer-menu-item"><a href="#">NOTICE</a></li>
+            </ul>
+
+            <ul class="drawer-menu-list">
+              <li class="drawer-menu-item">
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+              <li class="drawer-menu-item">
+                <a href="#">KO / EN</a>
+              </li>
+            </ul>
+
+            <div class="drawer-nav">
+              <p>LOGIN</p>
+              <p>SEARCH</p>
+            </div>
+          </div>
+        </header>
+      </aside>
+
+      <div class="overlay"></div>
+    </header>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="footer-item">
+              <ul class="info-list">
+                <li class="info-list-item">CUSTOMER CENTER <a href="tel:1234-5678">1234-5678</a></li>
+                <li class="info-list-item">OPEN MON-FRI/2PM-6PM</li>
+                <li class="info-list-item">HOLLIDAYS-CLOSE</li>
+              </ul>
+
+              <ul class="privacy-list">
+                <li class="privacy-item"><a href="#">COMPANY</a></li>
+                <li class="privacy-item"><a href="#">TERM &CONDITIONS</a></li>
+                <li class="privacy-item"><a href="#">PRIVACY PRIAVCY</a></li>
+              </ul>
+
+              <span><a href="">INSTARGRAM</a></span>
+
+              <ul class="company-list">
+                <li class="company-list-item">
+                  COMPANY-주식회사 아비에무아 OWNER-KANG MIN KYOUNG
+                </li>
+                <li class="company-list-item">ADDRESS-서울특별시 **구 **로</li>
+                <li class="company-list-item">BUSINESS LICENSE-488-81-01678</li>
+              </ul>
+
+              <div class="copyright">
+                <p>@Copyright Avie muah "All rights reserved"</p>
+                <p>
+                  본 사이트는 상업적 목적이 아닌 개인 포트폴리오 사이트로
+                  제작되었습니다. :)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <!-- is-active -->
+
+    <script src="./js/sidebar.js"></script>
   </body>
 </html>

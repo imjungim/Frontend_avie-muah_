@@ -53,6 +53,14 @@ button {
   color: #111111;
 }
 
+.menu-button.pageBtn {
+  color: #111111;
+}
+
+.nav-menu-item.pageBtn a{
+  color: #111111;
+}
+
 .logo-image a {
   display: flex;
 }
@@ -164,31 +172,43 @@ button {
 
 /*---- SpringCollection ----*/
 
+.spring {
+  font-size: var(--font-size-sm);
+  padding-bottom: var(--padding);
+}
+
 .product-spring {
-  padding-top: 70px;
+  padding-top: 80px;
 }
 
-.spring-item {
+.product-item {
   margin-bottom: var(--margin);
+  transition: scale 200ms ease-in-out, opacity 200ms ease-in-out;
 }
 
-.spring-item img {
+.product-item:hover {
+  scale: 1.1;
+  opacity: 0.7;
+}
+
+.product-item img {
   width: 100%;
   height: auto;
 }
 
-.product p {
+.product-content p {
+  padding-top: 6px;
   font-size: var(--font-size-md);
 }
 
-
 /* Footer */
 footer {
+  margin-top: var(--margin);
   background-color: #f8f7f7;
 }
 
 .footer-item {
-  padding: 50px 0; 
+  padding: 50px 0;
   font-size: var(--font-size-sm);
 }
 
@@ -243,7 +263,7 @@ footer {
 
   /* Sidebar */
   .sidebar {
-    width: 30vw;
+    width: 20vw;
   }
   /* Footer */
   .footer-item {
@@ -259,16 +279,6 @@ footer {
   .company-list-item {
     padding-bottom: 3px;
   }
-
-  /* .spring-item {
-    display: flex;
-  }
-  .spring-item-list {
-    padding-right: 30px;
-  }
-  .spring-item-list:last-child {
-    padding-right: 0;
-  } */
 }
 
 @media screen and (min-width: 1024px) {
