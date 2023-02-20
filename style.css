@@ -1,0 +1,279 @@
+:root {
+  /* color */
+  --font-main-color: #111111;
+  --font-price-color: #2e2e2e;
+  --font-sidebar-color: #888888;
+
+  /* size */
+  --padding: 15px;
+  --margin: 20px;
+  --m-bottom: 12px;
+  --sidebar-padding: 30px;
+
+  /* 메인 폰트사이즈 */
+  --font-size-sm: 11px;
+
+  --font-size-md: 12px;
+  --line-height: 8px;
+  --letter-spacing: 0.5px;
+  --font-weight: 400;
+
+  --font-size-lg: 14px;
+
+  /* z-index */
+  --header-z: 500;
+  --sidebar-z: 300;
+  --overlay-z: 100;
+}
+
+/* Header and MainPage*/
+
+.header-section {
+  position: fixed;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  height: 50px;
+  padding: 0 30px;
+  z-index: var(--header-z);
+}
+
+.header-section a,
+button {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  font-weight: var(--font-weight);
+  color: #fff;
+}
+
+.header-section .menu-button.is-active {
+  color: #111111;
+}
+
+.logo-image a {
+  display: flex;
+}
+
+.logo-image a img {
+  height: 30px;
+  margin: 0 auto;
+}
+
+.header-image {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: var(--margin);
+  background-image: url('./aviemuah/mainpage-1.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  animation: slideBg 10s linear infinite 3s;
+  animation-timing-function: ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+@keyframes slideBg {
+  0% {
+    background-image: url('./aviemuah/mainpage-1.jpg');
+  }
+  35% {
+    background-image: url('./aviemuah/mainpage-2.jpg');
+  }
+  65% {
+    background-image: url('./aviemuah/mainpage-3.jpg');
+  }
+  100% {
+    background-image: url('./aviemuah/mainpage-4.jpg');
+  }
+}
+
+/* sidebar */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100vh;
+  padding-top: 70px;
+  background-color: #fff;
+  transform: translate3d(-100%, 0, 0);
+  z-index: var(--sidebar-z);
+  transition: transform 400ms ease-in-out;
+}
+
+.sidebar.is-active {
+  transform: translate3d(0, 0, 0);
+}
+
+.sidebar .sidebar-header h4 {
+  font-size: var(--font-size-sm);
+  color: var(--font-sidebar-color);
+  padding: var(--sidebar-padding);
+}
+
+.drawer-menu-list {
+  padding: var(--sidebar-padding);
+}
+
+.drawer-menu-item {
+  font-size: var(--font-size-md);
+  color: var(--font-main-color);
+  padding-bottom: 6px;
+}
+
+.drawer-nav {
+  display: flex;
+  padding: var(--sidebar-padding);
+  font-size: var(--font-size-md);
+  color: var(--font-main-color);
+  padding-bottom: 6px;
+}
+
+.drawer-nav p {
+  margin-right: 12px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(169, 168, 168, 0.5);
+  z-index: var(--overlay-z);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+}
+
+.overlay.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sidebar-image-section {
+  display: none;
+}
+
+/*---- SpringCollection ----*/
+
+.product-spring {
+  padding-top: 70px;
+}
+
+.spring-item {
+  margin-bottom: var(--margin);
+}
+
+.spring-item img {
+  width: 100%;
+  height: auto;
+}
+
+.product p {
+  font-size: var(--font-size-md);
+}
+
+
+/* Footer */
+footer {
+  background-color: #f8f7f7;
+}
+
+.footer-item {
+  padding: 50px 0; 
+  font-size: var(--font-size-sm);
+}
+
+.info-list,
+.privacy-list,
+.company-list {
+  margin-bottom: var(--m-bottom);
+}
+
+.info-list-item,
+.privacy-item,
+.company-list-item {
+  padding-bottom: 3px;
+}
+
+/* 반응형 */
+
+@media screen and (max-width: 767px) {
+  /* 767px까지 적용 */
+  .md-only {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* 769px부터 적용 */
+  .lg-only {
+    display: none;
+  }
+
+  .header-section a,
+  button {
+    font-size: var(--font-size-md);
+  }
+
+  .nav-menu-list {
+    display: flex;
+    font-size: var(--font-size-md);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+    font-weight: var(--font-weight);
+    color: #fff;
+  }
+
+  .nav-menu-list .nav-menu-item {
+    margin-right: 12px;
+  }
+
+  .logo-image a {
+    margin-left: 150px;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    width: 30vw;
+  }
+  /* Footer */
+  .footer-item {
+    display: flex;
+    justify-content: space-between;
+    margin: var(--margin) 0;
+    padding: var(--padding);
+    font-size: var(--font-size-sm);
+  }
+
+  .info-list-item,
+  .privacy-item,
+  .company-list-item {
+    padding-bottom: 3px;
+  }
+
+  /* .spring-item {
+    display: flex;
+  }
+  .spring-item-list {
+    padding-right: 30px;
+  }
+  .spring-item-list:last-child {
+    padding-right: 0;
+  } */
+}
+
+@media screen and (min-width: 1024px) {
+  /* 1025px부터 적용 */
+  .sm-hidden {
+    display: none;
+  }
+}

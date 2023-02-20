@@ -1,0 +1,118 @@
+:root {
+  /* color */
+  --font-main-color: #111111;
+  --font-price-color: #2e2e2e;
+  /* size */
+  --padding: 15px;
+  --margin: 20px;
+
+  /* 메인 폰트사이즈 */
+  --font-size-12: 12px;
+  --line-height: 8px;
+  --letter-spacing: 0.5px;
+  --font-weight: 400;
+  --font-size-11: 11px;
+}
+
+/* Header and MainPage*/
+
+.header-section {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: var(--padding);
+  height: 65px;
+}
+
+.header-section button {
+  font-size: var(--font-size-12);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  font-weight: var(--font-weight);
+  color: #fff;
+}
+
+.header-section .logo-image img {
+  display: block;
+
+  height: 40px;
+}
+
+.nav-menu-list {
+  display: none;
+  font-size: var(--font-size-12);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  font-weight: var(--font-weight);
+  color: #fff;
+}
+
+.nav-menu-list .nav-menu-item {
+  margin-right: 12px;
+}
+
+.header-image {
+  width: 100%;
+  height: 100vh;
+  background-image: url('./aviemuah/mainpage-1.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  animation: slideBg 5s linear infinite 1s;
+  animation-timing-function: ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+@keyframes slideBg {
+  0% {
+    background-image: url('./aviemuah/mainpage-1.jpg');
+  }
+  50% {
+    background-image: url('./aviemuah/mainpage-2.jpg');
+  }
+  100% {
+    background-image: url('./aviemuah/mainpage-3.jpg');
+  }
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: var(--margin) 0;
+  padding: var(--padding);
+  font-size: var(--font-size-11);
+}
+
+.footer .info-list-item,
+.privacy-item,
+.company-list-item {
+  padding-bottom: 3px;
+}
+
+/* 반응형 */
+
+@media screen and (min-width: 768px) {
+  .lg-only {
+    display: none;
+  }
+  .nav-menu-list {
+    display: flex;
+    font-size: var(--font-size-12);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+    font-weight: var(--font-weight);
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sm-only {
+    display: none;
+  }
+}
