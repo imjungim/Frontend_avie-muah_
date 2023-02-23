@@ -19,22 +19,22 @@
     <title>Avie muah</title>
   </head>
   <body>
-    <header class="header-image">
+    <header class="header">
       <div class="container">
         <div class="row">
           <div class="col">
             <div class="header-section">
               <!-- button is-active -->
               <button class="menu-button">
-                menu <i class="fas fa-caret-down"></i>
+                MENU <i class="fas fa-caret-down"></i>
               </button>
+
               <div class="logo-image">
-                <a href="./index.html">
-                  <img src="./aviemuah/logo.svg" alt="로고이미지" />
-                </a>
+                <a href="index.html"><img src="./aviemuah/logo.svg" alt="로고이미지" /></a>
               </div>
-              <a href="#" class="lg-only">CART(0)</a>
-              <ul class="nav-menu-list md-only">
+
+              <a href="#" class="nav-menu-sm lg-hidden">CART(0)</a>
+              <ul class="nav-menu-list md-hidden">
                 <li class="nav-menu-item">
                   <a href="#">KO / EN </a>
                 </li>
@@ -52,62 +52,65 @@
           </div>
         </div>
       </div>
-
-      <!-- Menu Sidebar -->
-      <!-- is-active -->
-      <aside class="sidebar">
-        <header class="sidebar-header">
-          <div class="sidebar-menu">
-            <h4>CATEGORY</h4>
-            <ul class="drawer-menu-list">
-              <li class="drawer-menu-item">
-                <a href="./springCollection.html">2022 SPRING COLLECTION</a>
-              </li>
-              <li class="drawer-menu-item"><a href="./top.html">TOPS</a></li>
-              <li class="drawer-menu-item">
-                <a href="./pants.html">PANTS</a>
-              </li>
-            </ul>
-
-            <ul class="drawer-menu-list">
-              <li class="drawer-menu-item">
-                <a href="./pages/springCollection.html">COLLECTION</a>
-              </li>
-              <li class="drawer-menu-item">
-                <a href="./about.html">ABOUT</a>
-              </li>
-              <li class="drawer-menu-item">
-                <a href="./boardinfo.html">INFO</a>
-              </li>
-              <li class="drawer-menu-item"><a href="#">NOTICE</a></li>
-            </ul>
-
-            <ul class="drawer-menu-list">
-              <li class="drawer-menu-item">
-                <a href="#"><i class="fa fa-instagram"></i></a>
-              </li>
-              <li class="drawer-menu-item">
-                <a href="#">KO / EN</a>
-              </li>
-            </ul>
-
-            <div class="drawer-nav">
-              <p>LOGIN</p>
-              <p>SEARCH</p>
-            </div>
-          </div>
-        </header>
-      </aside>
-
-      <div class="overlay"></div>
     </header>
+    <!-- Menu Sidebar -->
+
+    <aside class="sidebar">
+      <header class="sidebar-header">
+        <div class="sidebar-menu">
+          <h4>CATEGORY</h4>
+          <ul class="drawer-menu-list">
+            <li class="drawer-menu-item">
+              <a href="./pages/springCollection.html">2022 SPRING COLLECTION</a>
+            </li>
+            <li class="drawer-menu-item"><a href="./top.html">TOPS</a></li>
+            <li class="drawer-menu-item">
+              <a href="./pants.html">PANTS</a>
+            </li>
+          </ul>
+
+          <ul class="drawer-menu-list">
+            <li class="drawer-menu-item">
+              <a href="./pages/springCollection.html">COLLECTION</a>
+            </li>
+            <li class="drawer-menu-item">
+              <a href="./about.html">ABOUT</a>
+            </li>
+            <li class="drawer-menu-item">
+              <a href="./boardinfo.html">INFO</a>
+            </li>
+            <li class="drawer-menu-item"><a href="#">NOTICE</a></li>
+          </ul>
+
+          <ul class="drawer-menu-list">
+            <li class="drawer-menu-item">
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li class="drawer-menu-item">
+              <a href="#">KO / EN</a>
+            </li>
+          </ul>
+
+          <div class="drawer-nav">
+            <p>LOGIN</p>
+            <p>SEARCH</p>
+          </div>
+        </div>
+      </header>
+    </aside>
+
+    <div class="overlay"></div>
+    <div class="background"></div>
+
     <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="col">
             <div class="footer-item">
               <ul class="info-list">
-                <li class="info-list-item">CUSTOMER CENTER <a href="tel:1234-5678">1234-5678</a></li>
+                <li class="info-list-item">
+                  CUSTOMER CENTER<br> <a href="tel:1234-5678">1234-5678</a>
+                </li>
                 <li class="info-list-item">OPEN MON-FRI/2PM-6PM</li>
                 <li class="info-list-item">HOLLIDAYS-CLOSE</li>
               </ul>
@@ -118,7 +121,7 @@
                 <li class="privacy-item"><a href="#">PRIVACY PRIAVCY</a></li>
               </ul>
 
-              <span><a href="">INSTARGRAM</a></span>
+              <span class="info-insta"><a href="">INSTARGRAM</a></span>
 
               <ul class="company-list">
                 <li class="company-list-item">
@@ -140,8 +143,6 @@
         </div>
       </div>
     </footer>
-
-    <!-- is-active -->
 
     <script src="./js/sidebar.js"></script>
   </body>

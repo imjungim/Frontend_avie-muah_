@@ -8,43 +8,45 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./grid.min.css" />
-    <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../grid.min.css" />
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="../style.css" />
     <script
       src="https://kit.fontawesome.com/05b77e48fa.js"
       crossorigin="anonymous"
     ></script>
 
-    <script src="./js/include.js" defer></script>
     <title>2022 SPRING COLLECTION</title>
   </head>
   <body>
-    <header class="">
+    <header class="header">
       <div class="container">
         <div class="row">
           <div class="col">
             <div class="header-section">
+              <!-- button is-active -->
               <button class="menu-button pageBtn">
-                menu <i class="fas fa-caret-down"></i>
+                MENU <i class="fas fa-caret-down"></i>
               </button>
+
               <div class="logo-image">
-                <a href="./index.html">
-                  <img src="./aviemuah/logo.svg" alt="로고이미지" />
-                </a>
+                <a href="../index.html"
+                  ><img src="../aviemuah/logo.svg" alt="로고이미지" class="page-logo"
+                /></a>
               </div>
-              <a href="#" class="lg-only">CART(0)</a>
-              <ul class="nav-menu-list md-only">
+
+              <a href="#" class="nav-menu-sm pageBtn lg-hidden ">CART(0)</a>
+              <ul class="nav-menu-list md-hidden">
                 <li class="nav-menu-item pageBtn">
                   <a href="#">KO / EN </a>
                 </li>
-                <li class="nav-menu-item pageBtn">
+                <li class="nav-menu-item">
                   <a href="#">LOGIN</a>
                 </li>
-                <li class="nav-menu-item pageBtn">
+                <li class="nav-menu-item">
                   <a href="#">CART(0)</a>
                 </li>
-                <li class="nav-menu-item pageBtn">
+                <li class="nav-menu-item">
                   <a href="#">SEARCH</a>
                 </li>
               </ul>
@@ -52,55 +54,55 @@
           </div>
         </div>
       </div>
-
-      <!-- Menu Sidebar -->
-      <!-- is-active -->
-      <aside class="sidebar">
-        <header class="sidebar-header">
-          <div class="sidebar-menu">
-            <h4>CATEGORY</h4>
-            <ul class="drawer-menu-list">
-              <li class="drawer-menu-item">
-                <a href="./springCollection.html">2022 SPRING COLLECTION</a>
-              </li>
-              <li class="drawer-menu-item"><a href="./top.html">TOPS</a></li>
-              <li class="drawer-menu-item">
-                <a href="./pants.html">PANTS</a>
-              </li>
-            </ul>
-
-            <ul class="drawer-menu-list">
-              <li class="drawer-menu-item">
-                <a href="./pages/springCollection.html">COLLECTION</a>
-              </li>
-              <li class="drawer-menu-item">
-                <a href="./about.html">ABOUT</a>
-              </li>
-              <li class="drawer-menu-item">
-                <a href="./boardinfo.html">INFO</a>
-              </li>
-              <li class="drawer-menu-item"><a href="#">NOTICE</a></li>
-            </ul>
-
-            <ul class="drawer-menu-list">
-              <li class="drawer-menu-item">
-                <a href="#"><i class="fa fa-instagram"></i></a>
-              </li>
-              <li class="drawer-menu-item">
-                <a href="#">KO / EN</a>
-              </li>
-            </ul>
-
-            <div class="drawer-nav">
-              <p>LOGIN</p>
-              <p>SEARCH</p>
-            </div>
-          </div>
-        </header>
-      </aside>
-
-      <div class="overlay"></div>
     </header>
+    <!-- Menu Sidebar -->
+
+    <aside class="sidebar">
+      <header class="sidebar-header">
+        <div class="sidebar-menu">
+          <h4>CATEGORY</h4>
+          <ul class="drawer-menu-list">
+            <li class="drawer-menu-item">
+              <a href="./springCollection.html">2022 SPRING COLLECTION</a>
+            </li>
+            <li class="drawer-menu-item"><a href="./top.html">TOPS</a></li>
+            <li class="drawer-menu-item">
+              <a href="./pants.html">PANTS</a>
+            </li>
+          </ul>
+
+          <ul class="drawer-menu-list">
+            <li class="drawer-menu-item">
+              <a href="./pages/springCollection.html">COLLECTION</a>
+            </li>
+            <li class="drawer-menu-item">
+              <a href="./about.html">ABOUT</a>
+            </li>
+            <li class="drawer-menu-item">
+              <a href="./boardinfo.html">INFO</a>
+            </li>
+            <li class="drawer-menu-item"><a href="#">NOTICE</a></li>
+          </ul>
+
+          <ul class="drawer-menu-list">
+            <li class="drawer-menu-item">
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li class="drawer-menu-item">
+              <a href="#">KO / EN</a>
+            </li>
+          </ul>
+
+          <div class="drawer-nav">
+            <p>LOGIN</p>
+            <p>SEARCH</p>
+          </div>
+        </div>
+      </header>
+    </aside>
+
+    <div class="overlay"></div>
+
 
     <section class="product-spring">
       <div class="container">
@@ -110,7 +112,7 @@
             <div class="product-item">
               <a href="#">
                 <img
-                  src="./aviemuah/new arrival/0e64d7af717d01e528ee4f6bdba17030.jpg"
+                  src="../aviemuah/new arrival/0e64d7af717d01e528ee4f6bdba17030.jpg"
                   alt=""
                   class="item-image"
                 />
@@ -125,7 +127,7 @@
             <div class="product-item">
               <a href="#">
                 <img
-                  src="./aviemuah/new arrival/1a23beb803f938caa918800af48f008b.jpg"
+                  src="../aviemuah/new arrival/1a23beb803f938caa918800af48f008b.jpg"
                   alt=""
                   class="item-image"
                 />
@@ -140,7 +142,7 @@
             <div class="product-item">
               <a href="#">
                 <img
-                  src="./aviemuah/new arrival/0e64d7af717d01e528ee4f6bdba17030.jpg"
+                  src="../aviemuah/new arrival/0e64d7af717d01e528ee4f6bdba17030.jpg"
                   alt=""
                   class="item-image"
                 />
@@ -155,7 +157,7 @@
             <div class="product-item">
               <a href="#">
                 <img
-                  src="./aviemuah/new arrival/71d13a86e232141d49b4fc8da61db527.jpg"
+                  src="../aviemuah/new arrival/71d13a86e232141d49b4fc8da61db527.jpg"
                   alt=""
                   class="item-image"
                 />
@@ -170,7 +172,7 @@
             <div class="product-item">
               <a href="#">
                 <img
-                  src="./aviemuah/new arrival/a9964e36446e7ca6d372cbc94c7fd2c6.jpg"
+                  src="../aviemuah/new arrival/a9964e36446e7ca6d372cbc94c7fd2c6.jpg"
                   alt=""
                   class="item-image"
                 />
@@ -185,7 +187,7 @@
             <div class="product-item">
               <a href="#">
                 <img
-                  src="./aviemuah/new arrival/d2cdcdcd2c0238bcca3e47aaccca7d75.jpg"
+                  src="../aviemuah/new arrival/d2cdcdcd2c0238bcca3e47aaccca7d75.jpg"
                   alt=""
                   class="item-image"
                 />
@@ -200,7 +202,7 @@
             <div class="product-item">
               <a href="#">
                 <img
-                  src="./aviemuah/new arrival/080685ab3040b868ec5b4e9d9df70b0a.jpg"
+                  src="../aviemuah/new arrival/080685ab3040b868ec5b4e9d9df70b0a.jpg"
                   alt=""
                   class="item-image"
                 />
@@ -215,7 +217,7 @@
             <div class="product-item">
               <a href="#">
                 <img
-                  src="./aviemuah/new arrival/ed498f113e30fc8187a05e75873528eb.jpg"
+                  src="../aviemuah/new arrival/ed498f113e30fc8187a05e75873528eb.jpg"
                   alt=""
                   class="item-image"
                 />
@@ -236,7 +238,10 @@
           <div class="col">
             <div class="footer-item">
               <ul class="info-list">
-                <li class="info-list-item">CUSTOMER CENTER 1234-5678</li>
+                <li class="info-list-item">
+                  CUSTOMER CENTER<br />
+                  <a href="tel:1234-5678">1234-5678</a>
+                </li>
                 <li class="info-list-item">OPEN MON-FRI/2PM-6PM</li>
                 <li class="info-list-item">HOLLIDAYS-CLOSE</li>
               </ul>
@@ -247,7 +252,7 @@
                 <li class="privacy-item"><a href="#">PRIVACY PRIAVCY</a></li>
               </ul>
 
-              <span>INSTARGRAM</span>
+              <span class="info-insta"><a href="">INSTARGRAM</a></span>
 
               <ul class="company-list">
                 <li class="company-list-item">
@@ -270,6 +275,6 @@
       </div>
     </footer>
 
-    <script src="./js/sidebar.js"></script>
+    <script src="../js/sidebar.js"></script>
   </body>
 </html>
