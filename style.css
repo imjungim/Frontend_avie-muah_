@@ -222,7 +222,7 @@ footer {
 }
 
 .footer-item {
-  padding-bottom: 20px;
+  padding: 20px 0;
   font-size: var(--font-size-sm);
 }
 
@@ -280,13 +280,13 @@ footer {
     width: 30vw;
   }
   /* Footer */
-  /* .footer-item {
+  .footer-item {
     display: flex;
     justify-content: space-between;
     margin: var(--margin) 0;
     padding: var(--padding);
     font-size: var(--font-size-sm);
-  } */
+  }
 
   .info-list-item,
   .privacy-item,
